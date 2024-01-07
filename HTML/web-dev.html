@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web-Dev</title>
+        <link rel="stylesheet" href="../STYLE/nav.css">
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div class="img">
+                <img src="../PICTURE/linux.jpg" alt="my pic" width="80px" height="60px">
+            </div>
+            
+            <div class="link">
+                    <a class="aa" href="../index.html">Bug-Bounty</a>
+
+                    <a class="aa active" href="web-dev.html">Web-Dev</a>
+
+                    <a class="aa" href="owasp.html">OWASP</a>
+
+                    <a class="aa" href="book.html">RESOURCEs</a>   
+
+                    <a class="aa" href="tools.html">TOOLs</a>    
+            </div>
+        </nav>
+        <section class="sec">
+            <aside class="side-bar">
+                    <h1 class="side fe">Front-End</h1><br>
+                <div  class="button">
+                    <button class="si-li html" onclick="html()">HTML/CSS</button>
+                    <button class="si-li js" onclick="js()">Java-Script</button>
+                </div>
+                    <h1 class="side be">Back-End</h1><br>
+                <div class="button">
+                    <button class="si-li php" onclick="php()">PHP</button>
+                    <button class="si-li py" onclick="py()">Python</button>
+                </div>
+                    <h1 class="side db">DataBase</h1><br>
+                <div class="button">
+                    <button class="si-li sql" onclick="sql()">SQL</button>
+                    <button class="si-li mdb" onclick="mdb()">MangoDB</button>
+                </div>
+            </aside>
+
+            <article class="article wd">
+                    <h1 class="ar-h">WEB-DEV</h1>
+                <div class="ar-p">
+                    <h2>Web Applications</h2>
+                    <p>
+                    In the early days of the Internet, the World Wide Web consisted only of web sites. These were essentially information repositories containing static documents. 
+Web browsers were invented as a means of retrieving and displaying those documents. The flow of interesting information was one-way, from server to browser. Most sites did not authenticate users, 
+because there was no need to. Each user was treated in the same way and was presented with the same information. Any security threats arising from hosting a website were related largely to vulnerabilities in web server software (of 
+which there were many). If an attacker compromised a web server, he usually would not gain access to any sensitive information, because the information 
+held on the server was already open to public view. Rather, an attacker typically would modify the files on the server to deface the web site’s contents or use the 
+server’s storage and bandwidth to distribute “warez.”
+                    </p>
+                    <p>
+                        Today, the World Wide Web is almost unrecognizable from its earlier form. The majority of sites on the web are in fact applications.
+    They are highly functional and rely on two-way fl ow of information between the server and browser. They support registration and login, financial transactions, 
+    search, and the authoring of content by users. The content presented to users is generated dynamically on the fly and is often tailored to each specific user. 
+    Much of the information processed is private and highly sensitive. Security, therefore, is a big issue. No one wants to use a web application if he believes 
+    his information will be disclosed to unauthorized parties.
+                    </p>
+                    <h2>Web Application Security</h2>
+                    <p>
+                        Web applications bring with them new and significant security threats. Each application is different and may contain unique vulnerabilities.
+    Most applications are developed in-house many by developers who have only a partial understanding of the security problems that may arise in the code they are producing.
+    To deliver their core functionality, web applications normally require connectivity to internal computer systems that contain highly sensitive data and that can perform powerful business functions.
+                    </p>
+                    <h3><b>NB</b> So, the point here is the best wey to attack something is by knowing how it work. For that reason i provide the basics of web-dev.</h3>
+                    <h2>Web-dev</h2>
+                    <p>
+                        Commonly it consists of 3 layers which are :-
+                    </p>
+                    <ul class="layer">
+                        <li>~ Front-End</li>
+                        <li class="p">- This is the presentation layer.</li>                    
+                        <li>~ Back-End</li>
+                        <li class="p">- This is the logic layer.</li>
+                        <li>~ DataBase</li>
+                        <li class="p">- This is the storage layer.</li>                    
+                    </ul>
+                    <p class="final">Finally i choose to looke at the must have skills and comeup with that here!</p>
+                </div>
+            </article>
+
+            <article class="article ht">
+                <h1 class="ar-h">HTML/CSS</h1>
+            <div class="ar-p">
+                <h2>What is HTML?</h2>
+                <p>
+                    HTML is a markup language for describing web documents (web pages).
+HTML stands for Hyper Text Markup Language. A markup language is a set of markup tags
+HTML documents are described by HTML tags. Each HTML tag describes different document content.
+                </p>
+                <h2>XHTML</h2>
+                <p>
+                    XHTML is a development of HTML that is based on XML and that has a stricter specifi cation than older versions of HTML. Part of the motivation for XHTML 
+was the need to move toward a more rigid standard for HTML markup to avoid the various compromises and security issues that can arise when browsers are 
+obligated to tolerate less-strict forms of HTML.
+                </p>
+                <h2>What Is DOM?</h2>
+                <p>
+                    The Document Object Model (DOM) is an abstract representation of an HTML document that can be queried and manipulated through its API.
+The DOM allows client-side scripts to access individual HTML elements by their id and to traverse the structure of elements programmatically. Data such 
+as the current URL and cookies can also be read and updated. 
+The DOM also includes an event model, allowing code to hook events such as form submission, navigation via links, and keystrokes. 
+Manipulation of the browser DOM is a key technique used in Ajax-based applications.
+                </p>
+                <h3><b>NB</b> As i said i am not here for web-dev, so lets talk why we need this.</h3>
+                <h2>Cross-Site Scripting (XSS)</h2>
+                <p>
+                    Web pages are made up of HTML code whose elements describe the 
+page’s structure and contents. In an XSS attack, the attacker injects an executable script into HTML pages 
+viewed by the user. HTML also allows the inclusion of executable scripts within HTML 
+documents using "script" tags. Websites use these scripts to control client-side application logic and make the website interactive.
+Scripts  that are embedded within an HTML file instead of loaded from a separate file are called inline scripts. These scripts are the cause of many XSS vulnerabilities.  
+This means that to understand XSS, you’ll have to first understand JavaScript and HTML syntax.
+                </p>
+                <h2>Clickjacking</h2>
+                <p>
+                    Clickjacking relies on an HTML feature called an iframe. HTML iframes allow developers to embed one web page within another by placing an 
+"iframe" tag on the page, and then specifying the URL to frame in the tag’s "src" attribute. 
+Iframes are useful for many things. The online advertisements you 
+often see at the top or sides of web pages are examples of iframes; companies use these to include a premade ad in your social media or blog. Iframes 
+also allow you to embed other internet resources, like videos and audio, in your web pages.
+Iframes have made our internet a more vibrant and interactive place. 
+But they can also be a danger to the framed web page because they introduce the possibilities of a clickjacking attack.
+                </p>
+                <h2>CSS</h2>
+                <p>
+                    Cascading Style Sheets (CSS) is a language used to describe the presentation of a 
+document written in a markup language. Within web applications, it is used to 
+specify how HTML content should be rendered on-screen (and in other media, 
+such as the printed page).
+In the earliest days of web application security, CSS was largely overlooked 
+and was considered to have no security implications. Today, CSS is increasingly 
+relevant both as a source of security vulnerabilities in its own right and as a 
+means of delivering effective exploits for other categories of vulnerabilities.
+                </p>
+                <p>~ Attacks that uses css are more of Client-Side Injection Attacks.</p>
+                <p class="final">Finally, this was just an example and it is hard to list all attacks that need HTML/CSS knowledge so is good time to master them.</p>
+            </div>
+        </article>
+
+        <article class="article jst">
+            <h1 class="ar-h">JavaScript</h1>
+        <div class="ar-p">
+            <h2>What is javaScript?</h2>
+            <p>
+                You should also learn to read JavaScript, the language with which most sites are written. 
+Reading the JavaScript of a site can teach you about how it works, giving you a fast track to finding bugs. 
+Many top hackers say that their secret sauce is that they read JavaScript and search for hidden end points, insecure programming logic, and secret keys. 
+Some also found many vulnerabilities by reading JavaScript source code.
+            </p>
+            <p>JavaScript is a relatively simple but powerful programming language that can be easily used to extend web interfaces in ways that are not possible using HTML alone.</p>
+            <p>It is commonly used to perform the following tasks :-</p>
+            <p>
+                ~ Validating user-entered data before it is submitted to the server to avoid 
+unnecessary requests if the data contains errors.
+            </p>
+            <p>
+                ~ Dynamically modifying the user interface in response to user actions for 
+example, to implement drop-down menus and other controls familiar 
+from non-web interfaces.
+            </p>
+            <p>
+                ~ Querying and updating the document object model (DOM) within the 
+browser to control the browser’s behavior (the browser DOM is described 
+in a moment).
+            </p>
+            <h2>JavaScript Hijacking</h2>
+            <p>
+                JavaScript hijacking provides a further method of capturing data cross-domain, turning CSRF into a limited “two-way” attack.
+The same-origin policy allows one domain to include script code from another domain, and this code executes in the context of the invoking domain, not the 
+issuing domain.
+            </p>
+            <h2>DOM-Based XSS</h2>
+            <h2>Cliant-Side Scripting</h2>
+            <p>
+                Thier is a lot to learn on javaScript some are :-
+            </p>
+            <ul class="layer">
+                <li>~ jQuery</li>
+                <li class="p">- a library makes it easier to use JavaScript on your website.</li>                    
+                <li>~ JSON</li>
+                <li class="p">- a syntax for storing and exchanging data.</li>
+                <li>~ Ajax</li>
+                <li class="p">- used on the client side to create user smooth interaction.</li>
+                <li>~ Some frameworks in both front & back end.</li>                    
+            </ul>
+            <p class="final">The best wey to realy know what javaScript can do is by actualy using it.</p>
+        </div>
+        </article>
+
+        <article class="article pht">
+            <h1 class="ar-h">PHP</h1>
+        <div class="ar-p">
+            <h2>What is PHP?</h2>
+            <p>
+                PHP is an acronym for "PHP: Hypertext Preprocessor", is a widely-used, open source scripting language.
+PHP scripts are executed on the server &  is free to download and use.<br>
+            It is powerful enough to be at the core of the biggest blogging system (WordPress)!<br>
+            It is deep enough to run the largest social network (Facebook)!<br>
+            It is also easy enough to be a beginner's first server side language!<br>
+PHP can generate dynamic page content can create, open, read, write, delete, and close files on the server,
+collect form data, send and receive cookies, add, delete, modify data in your database, 
+can be used to control user-access, encrypt data.<br>
+With PHP you are not limited to output HTML. You can output images, PDF files, and even Flash movies. 
+You can also output any text, such as XHTML and XML.
+            </p>
+            <h2>Why PHP?</h2>
+            <p>
+                PHP runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.),
+ is compatible with almost all servers used today (Apache, IIS, etc.),
+supports a wide range of databases, is free. Download it from the official PHP resource: www.php.net, 
+is easy to learn and runs efficiently on the server side.
+            </p>
+            <h2>Dynamic Execution Vulnerabilities</h2>
+            <p>
+                Dynamic execution vulnerabilities most commonly arise in languages such as PHP and Perl. But in principle, any type of application platform may pass 
+user-supplied input to a script-based interpreter, sometimes on a different back-end server. <br>
+The PHP function eval is used to dynamically execute code that is passed to the function at runtime.
+            </p>
+            <h2>Remote File Inclusion</h2>
+            <p>
+                The PHP language is particularly susceptible to file inclusion vulnerabilities because its include functions can accept a remote file path. 
+This has been the basis of numerous vulnerabilities in PHP applications.
+            </p>
+            <p class="final">It known that php is most used language in the server-side. so, knowing how to use it will open a smooth way to file access from a server.</p>
+        </div>
+        </article>
+
+        <article class="article pyt">
+            <h1 class="ar-h">PYTHON</h1>
+        <div class="ar-p">
+            <h2>What is PYTHON?</h2>
+            <p>
+                Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+                It is used for:- <br>
+                web development (server-side), <br>
+                software development, <br>
+                mathematics, <br>
+                system scripting.
+            </p>
+            <h2>Why PYTHON?</h2>
+            <p>
+                Python is very easy to learn for newcomers and beginners. It has simplified
+syntax so anybody can easily read and understand the code. There are lots of
+tools and modules available for python to do our tasks by writing a few lines
+of code.
+            </p>
+            <h2>Django</h2>
+            <p>
+                Django is a free, open source web framework written in the Python programming language.
+A “web framework” is software that abstracts away many of the common challenges related to
+building a website, such as connecting to a database, handling security, user accounts, and so
+on. These days most developers rely on web frameworks rather than trying to build a website
+truly from scratch. Django in particular was first released in 2005 and has been in continuous
+development since then. Today, it is one of the most popular web frameworks available, used
+by the largest websites in the world–Instagram, Pinterest, Bitbucket, Disqus–but also flexible
+enough to be a good choice for early-stage startups and prototyping personal projects.
+            </p>
+            <h2>mysql.connector & pymongo</h2>
+            <p>This modules give you access to the databese.</p>
+            <p class="final">Python is not just for the webv it is must learn to anyone who is in IT, especially for hacking the authomation Quality is like nothing else.</p>
+        </div>
+        </article>
+
+        <article class="article st">
+            <h1 class="ar-h">SQL</h1>
+        <div class="ar-p">
+            <h2>What is SQL?</h2>
+            <p>
+                Structured Query Language (SQL) is used to access data in relational databases, such as Oracle, MS-SQL server and MySQL. 
+The vast majority of today’s web applications employ SQL-based databases as their back-end data store, and nearly 
+all application functions involve interaction with these data stores in some way.
+Although SQL is an ANSI (American National Standards Institute) standard, there are different versions of the SQL language.
+However, to be compliant with the ANSI standard, they all support at least the major commands (such as SELECT, UPDATE, DELETE, INSERT, WHERE) in a similar manner.
+            </p>
+            <p>Most of the SQL database programs also have their own proprietary extensions in addition to the SQL standard!</p>
+            <h2>SQL injection</h2>
+            <p>
+                This vulnerability enables an attacker to submit crafted input to interfere with the application’s interaction with back-end databases.
+ An attacker may be able to retrieve arbitrary data from the application, interfere with its logic, or execute commands on the database 
+server itself.
+            </p>
+            <h2>Client-Side SQL Injection</h2>
+            <p>
+                HTML5 supports client-side SQL databases, which applications can use to store 
+data on the client. An attacker may be able to perform client-side SQL injection attacks by including crafted input in a piece of data he controls, which the 
+application stores locally.  Depending on exactly how the application uses the local database, serious attacks may be possible.
+            </p>
+            <p class="final">Generally Anything related to databese is wher SQL comes to play.</p>
+        </div>
+        </article>
+
+        <article class="article mt">
+            <h1 class="ar-h">MongoDB</h1>
+        <div class="ar-p">
+            <h2>What is MongoDB?</h2>
+            <p>
+                mongoDB is one of the NoSQL databases, And stores data in JSON-like documents, which makes the database very flexible and scalable.</p>
+            <h2>Injecting into MongoDB</h2>
+            <p>
+                Many NoSQL databases make use of existing programming languages to provide a flexible, programmable query mechanism. 
+If queries are built using string concatenation, an attacker can attempt to break out of the data context and alter the query’s syntax.
+            </p>
+            <p>
+                Databases don’t always use SQL. NoSQL, or Not Only SQL, databases are those that don’t use the SQL language. 
+Unlike SQL databases, which store data in tables, NoSQL databases store data in other structures, such as key-value pairs and graphs. 
+NoSQL query syntax is database-specific, and queries are often written in the programming language of the application. 
+Modern NoSQL databases, such as MongoDB, Apache CouchDB, and Apache Cassandra, are also vulnerable to injection attacks. 
+These vulnerabilities are becoming more common as NoSQL rises in popularity.
+            </p>
+            <p>
+                In MongoDB, $ne selects objects whose value is not equal to the specified value. Here, the query would return users whose username is admin
+and password isn’t equal to an empty string, which is true unless the admin has a blank password! The attacker can thus bypass authentication and gain access to the admin account.
+Injecting into MongoDB queries can also allow attackers to execute arbitrary JavaScript code on the server.
+            </p>
+            <p>In MongoDB, the $where, mapReduce, $accumulator, and $function operations allow developers to run arbitrary JavaScript.</p>
+            <p class="final">MongoDB can be a good alternativ for SQL-based databese!</p>
+        </div>
+        </article>
+        </section>
+
+        <footer class="foot">
+            <ul class="flist">
+                <li class="fo-li">Contact</li>
+                <li class="fo-li">ABOUT</li>
+                <li class="fo-li">Social</li>
+                <li class="fo-li">FAQ</li>
+            </ul>
+            <p class="fp">&copy; <a style="color:aqua" href="../index.html">Bug-bounty.com</a>. All rights reserved.</p>
+        </footer>
+
+        <script src="../SCRIPT/web.js"></script>
+    </body>
+</html>

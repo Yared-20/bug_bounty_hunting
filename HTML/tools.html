@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TOOLs</title>
+        <link rel="stylesheet" href="../STYLE/nav.css">
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div class="img">
+                <img src="../PICTURE/linux.jpg" alt="my pic" width="80px" height="60px">
+            </div>
+            
+            <div class="link">
+                    <a class="aa" href="../index.html">Bug-Bounty</a>
+
+                    <a class="aa" href="web-dev.html">Web-Dev</a>
+
+                    <a class="aa" href="owasp.html">OWASP</a>
+
+                    <a class="aa" href="book.html">RESOURCEs</a>   
+
+                    <a class="aa active" href="tools.html">TOOLs</a>    
+            </div>
+        </nav>
+        <section class="sec">
+            <aside class="side-bar">
+                    <h1 class="side">TOOLs</h1><br>
+                <div class="button">
+                    <button class="si-li recon" onclick="recon()">Recon</button>
+                    <button class="si-li scann" onclick="scann()">Scanning</button>
+                    <button class="si-li exploit" onclick="exploit()">Exploit</button>
+                </div>
+            </aside>
+
+            <article class="article to">
+                    <h1 class="ar-h">TOOLs</h1>
+                <div class="ar-p">
+                    <p>
+                        There are different applications that bug-hunters use.
+                        Automated testing tools like fuzzers or scanners can help you discover some bugs, 
+                        but they often hinder your learning progress if you don’t take the time to understand how each tool in your testing toolkit works.
+                    </p> 
+                    <p>
+                        Thus, before adding a tool to your workflow, be sure to take time to read the 
+                        tool’s documentation and understand how it works. You should do this for all the recon and testing tools you use.
+                        Besides reading the tool’s documentation, I also recommend reading its source code if it’s open source. 
+                        This can teach you about the methodologies of other hackers and provide insight into how the best hackers in the 
+                        field approach their testing.
+                    </p> 
+                    <p class="final">Finally, by learning how others automate hacking, you’ll begin learning how to write your own tools as well.</p>
+                    <h2>Kali Linux</h2>
+                    <p>    
+                        Kali Linux is perhaps the most fundamental hacking tool available. It’s a 
+                        complete free operating system that you can install directly on your PC or run 
+                        as a live DVD without installing it on your hard drive. You should definitely 
+                        visit the Kali website to download a disc image that you can burn onto a blank 
+                        DVD (www.kali.org). <br>    
+                    </p>
+                    <p><b>This is not just a tool it is like water for hacking !</b></p>
+                    <p>Here ther are tools for tasks like :-</p>
+                    <ul class="layer">
+                        <li>~ Recon</li>
+                        <li>~ Scanning</li>
+                        <li>~ Exploit</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="article rt">
+                    <h1 class="ar-h">RECON</h1>
+                <div class="ar-p">
+                    <p>The first step to attacking any target is conducting reconnaissance, or simply put, gathering information about the target.</p>
+                    <p>
+                        Reconnaissance is important because it’s how you figure out an application’s attack surface. 
+To look for bugs most efficiently, you need to discover all the possible ways of attacking a target before deciding on the most effective approach.
+                    </p>
+                    <h2># Google Dorking</h2>
+                    <p>                   
+                        When hunting for bugs, you’ll often need to research the details of a vulnerability. 
+                        If you’re exploiting a potential cross-site scripting (XSS) vulnerability, you might want to find a particular payload you saw on GitHub.
+                    </p>
+                    <p>
+                        Advanced search-engine skills will help you find the resources you need quickly and accurately.
+                        In fact, advanced Google searches are a powerful technique that hackers often use to perform recon. Hackers call this Google dorking. For the 
+                        average Joe, Google is just a text search tool for finding images, videos, and 
+                        web pages. But for the hacker, Google can be a means of discovering valuable information such as hidden admin portals, unlocked password files, 
+                        and leaked authentication keys.
+                    </p>
+                    <p class="final">Google’s search engine has its own built-in query language that helps you filter your searches.</p>
+                    <h2># WHOIS and Reverse WHOIS</h2>
+                    <p>
+                        When companies or individuals register a domain name, they need to supply 
+identifying information, such as their mailing address, phone number, and 
+email address, to a domain registrar. Anyone can then query this information 
+by using the whois command, which searches for the registrant and owner 
+information of each known domain. You might be able to find the associated 
+contact information, such as an email, name, address, or phone number.
+                    </p>
+                    <p>
+                        This information is not always available, as some organizations and 
+individuals use a service called domain privacy, in which a third-party service 
+provider replaces the user’s information with that of a forwarding service. 
+                    </p>
+                    <p>
+                        You could then conduct a reverse WHOIS search, searching a database by using an organization name, a phone number, or an email address to find domains registered with it. 
+This way, you can find all the domains that belong to the same owner. Reverse WHOIS is extremely useful for finding obscure or 
+internal domains not otherwise disclosed to the public. Use a public reverse WHOIS tool like ViewDNS.info (https://viewdns.info/reversewhois/) to conduct 
+this search. WHOIS and reverse WHOIS will give you a good set of top-level domains to work with.
+                    </p>
+                    <h2># Shodan</h2>
+                    <p>
+                        To find services on a machine without actively scanning it, you can use Shodan, a search engine that lets the user find machines connected to the internet. 
+With Shodan, you can discover the presence of webcams, web servers, or even power plants based on criteria such as hostnames or IP addresses.
+                    </p>
+                    <h2># Wayback Machine</h2>
+                    <p>
+                        A digital record of internet content. It records a site’s content at various points in time. 
+Using the Wayback Machine, you can find old endpoints, directory listings, forgotten subdomains, URLs, 
+and files that are outdated but still in use. Tomnomnom’s tool Waybackurls 
+(https://github.com/tomnomnom/waybackurls/) can automatically extract endpoints and URLs from the Wayback Machine.
+                    </p>
+                    <h2># Introspection</h2>
+                    <p>
+                        A great reconnaissance tool for bug hunters From GraphQL APIs, a feature that allows API users to ask a GraphQL system 
+for information about itself. In other words, they’re queries that return information about how to use the API.
+                    </p>
+                    <p class="final">Ther are a ton of recon tools to look for and mastering them will pay off.</p>
+                </div>
+            </article>
+            
+            <article class="article sc">
+                    <h1 class="ar-h">SCANNING</h1>
+                <div class="ar-p">
+                    <p>
+                        Scanning is often part of bug-hunting.Bug hunters can manually discover vulnerabilities without using a vulnerability scanner. 
+                        Vulnerability scanners are used to detect specific vulnerabilities that are publicly known and for which programmers have developed tests, and can help speed up the vulnerability discovery process. 
+Scheduled recurring vulnerability scanning should be part of a threat and vulnerability management program. 
+Vulnerability scanners are an important tool in a bug-hunters toolbox, and one of the first steps in a bug-hunting. Following are some common vulnerability scanners:
+                    </p>
+                    <h2># Nmap</h2>
+                    <p>
+                        stands for network mapper.
+                        Whether you are an aspiring master hacker, network engineer, or security engineer, there is one tool you need to be familiar with:nmap. 
+Nmap began as a simple, modest port-scanning tool with the ability to send TCP, UDP, or ICMP packets to a host and its ports to elicit a response. 
+Then, based upon the host’s response, nmap determines whether the port is open. 
+Over the years, it has evolved to become a powerful scanning tool with even some exploitation capabilities.
+                    </p>
+                    <p>
+                        If you run Nmap on a network that you’re testing, you can see how it was designed and how it operates. 
+                        Nmap includes host discovery for seeing which network services servers run, port 
+scanning to see which TCP/IP network ports are running on those servers, and operating system detection so that you can see which OS servers and clients are in use on the network.
+                    </p>
+                    <h2># Hping3</h2>
+                    <p>
+                        Hping3 is a powerful and versatile scanning tool for scanning.
+                        it is often referred to as a “packet crafting tool.” That’s because it has the capability of creating just about any type of packet, both RFC (Request for Comment. 
+These are the specifications of how protocols are supposed to work) compliant and non-RFC compliant. If you can imagine a packet, hping3 can create it!
+                    </p>
+                    <p>
+                        Hping3 can create TCP, UDP, ICMP, and RAW IP packets. This enables us to create an almost infinite 
+variety of packets that we can use to get past IDSs, firewalls and scan systems behind them.
+                    </p>
+                    <p>
+                        Hping3 will give us raw packet responses and we need to do the interpretation ourselves. 
+This is probably one of the primary reasons hping3 is not as popular as nmap for scanning, but its versatility makes it a valuable tool to have in the active reconnaissance toolbox.
+                    </p>
+                    <h2># WhatWeb</h2>
+                    <p>WhatWeb is a Python script that probes the website for signatures of the server, the CMS and other technologies used to develop the site.</p>
+                    <p>
+                        WhatWeb recognises web technologies including content management systems (CMS), blogging platforms, statistic/analytics packages, JavaScript
+libraries, web servers, and embedded devices. WhatWeb has over 1700 plugins, each to recognise something different. WhatWeb also identifies 
+version numbers, email addresses, account IDs, web framework modules,SQL errors, and more.
+                    </p>
+                    <p class="final">After gathering full information about the technology it is time for Exploitation !</p>
+                </div>
+            </article>
+
+            <article class="article et">
+                <h1 class="ar-h">EXPLOIT</h1>
+            <div class="ar-p">
+                <p>
+                    Attacks typically are customized in nature, tailored to the particular behavior you have identifi ed and to the specifi c ways in 
+which the application enables you to interact with and manipulate it. Performing customized attacks manually can be extremely laborious and is prone to mistakes. 
+The most successful web application hackers take their customized attacks a step further and fi nd ways to automate them to make them easier, faster, and more effective
+                </p>
+                <h2># Burp Suite</h2>
+                <p>
+                    Burp Suite has a variety of useful features besides the web proxy. 
+                    Burp Suite also includes an intruder for automating attacks, a repeater for manipulating 
+individual requests, a decoder for decoding encoded content, and a comparertool for comparing requests and responses. 
+Of all Burp’s features, these are the most useful for bug bounty hunting.
+                </p>
+                <p>
+                    you can use the Burp intruder to iterate through IDs to find valid ones. <br> The Burp extension Autorize (https://github.com/Quitten/Autorize/) scans for authorization issues by 
+accessing higher-privileged accounts with lower-privileged accounts, <br> 
+whereas the Burp extensions Auto Repeater and AuthMatrix allow you to automate the process of switching out cookies, headers, and parameters.
+                </p>
+                <h3>For more information on how to use these tools, go to the Extender tab of your Burp window, then to the BAppStore tab to find the extension you want to use.</h3>
+                <h2># SQLmap</h2>
+                <p>
+                    There are numerous tools for SQL injection, but probably the most widelyused is sqlmap. The beauty of 
+sqlmap is its ability to identify the backend database, enumerate its structure and inject SQL commands 
+into the database from a Web form. In addition, it will work against most of the RDMS’s.
+                </p>
+                <h2># JAttack</h2>
+                <p>
+                    JAttack is an example of a simple but versatile tool that demonstrates how anyone 
+with some basic programming knowledge can use customized automation to deliver powerful attacks against an application.
+                </p>
+                <p class="final">You can find more exploitation tools and learn them on the internet !</p>
+            </div>
+        </article>
+        </section>
+
+        <footer class="foot">
+            <ul class="flist">
+                <li class="fo-li">Contact</li>
+                <li class="fo-li">ABOUT</li>
+                <li class="fo-li">Social</li>
+                <li class="fo-li">FAQ</li>
+            </ul>
+            <p class="fp">&copy; <a style="color:aqua" href="../index.html">Bug-bounty.com</a>. All rights reserved.</p>
+        </footer>
+
+        <script src="../SCRIPT/tools.js"></script>
+    </body>
+</html>

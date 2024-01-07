@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OWASP</title>
+        <link rel="stylesheet" href="../STYLE/nav.css">
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div class="img">
+                <img src="../PICTURE/linux.jpg" alt="my pic" width="80px" height="60px">
+            </div>
+            
+            <div class="link">
+                    <a class="aa" href="../index.html">Bug-Bounty</a>
+
+                    <a class="aa" href="web-dev.html">Web-Dev</a>
+
+                    <a class="aa active" href="owasp.html">OWASP</a>
+
+                    <a class="aa" href="book.html">RESOURCEs</a>   
+
+                    <a class="aa" href="tools.html">TOOLs</a>    
+            </div>
+        </nav>
+        <section class="sec">
+            <aside class="side-bar">
+                    <h1 class="side">OWASP</h1><br>
+                <div class="button">
+                    <button class="si-li o10" onclick="o10()">owasp Top 10</button>
+                    <button class="si-li oZ" onclick="oZ()">owasp-ZAP</button>
+                    <button class="si-li oG" onclick="oG()">owasp-GAME</button>
+                </div>
+            </aside>
+
+            <article class="article ow">
+                    <h1 class="ar-h">OWASP</h1>
+                <div class="ar-p">
+                    <h2>What is OWASP?</h2>
+                    <p>
+                        Mark Curphey founded the Open Web Application Security Project (OWASP) in 2001 (owasp.org). 
+Their project includes a number of open-source software development programs and toolkits, local chapters and conferences, among other things.
+one of their projects is the maintenance of the  OWASP Top 10 , a list of the top 10 security risks faced by web applications. 
+OWASP focuses on pentesting web applications specifically. This nonprofit organization now has just over a handful of employees, but well over 10,000 volunteers. 
+OWASP develops specific web application security testing standards and offers educational programs to the general public.
+                    </p>
+                    <h2>OWASP Testing Guide</h2>
+                    <p>
+                        Otherwise known as OWASP’s WSTG (web security testing guide), 
+this is a guide to testing the security of web applications offered by OWASP.
+                    </p>
+                    <h2>Tools</h2>
+                    <p>There are a lot of tools offered by OWASP, some are :-</p>
+                    <ul class="layer">
+                        <li>~ OWASP-ZAP</li>
+                        <li>~  OWASP-ZSC (zero-day ShellCode)</li>
+                        <li>~ DirBuster</li>
+                        <li>~ AntiSamy</li>
+                        <li>~ OWASP Juice Shope</li>
+                    </ul>
+                    <p class="final">OverAll if you are looking into web-Hacking OWASP is something you should see as home.</p>
+                </div>
+            </article>
+
+            <article class="article tt">
+                    <h1 class="ar-h">OWASP Top 10</h1>
+                <div class="ar-p">
+                    <p>
+                        The OWASP TOP 10 is a standard awareness document for developers and web application security.
+it represents a broad consensus about the most critical security risks to web application.
+                    </p>
+                    <h2>1. Injection</h2>
+                    <p>
+                        Injection flaws, such as SQL, NoSQL, OS and LDAP, occur when untrusted data is sent to an interpreter as part of a command or query. 
+Injection flaws are very prevalent, particularly in legacy code, And they are easy to discover when examining code.
+Scanners and Fuzzers can help attackers find injection flaws.
+                    </p>
+                    <h2>2. Broken Authentication and Session Management</h2>
+                    <p>
+                        This category of vulnerability encompasses various defects within the application’s login mechanism, which 
+may enable an attacker to guess weak passwords, launch a brute-force attack, or bypass the login.
+Session management attacks are well understood, particularly in relation to unexpired session tokens.
+Attackers can detect broken authentication using manual means and exploit them using automated tools with password lists and dictionary attacks.
+                    </p>
+                    <h2>3. Sensitive Data Exposure</h2>
+                    <p>
+                        This mainly involves interacting 
+with the application in unexpected and malicious ways and exploiting anomalies in the application’s behavior to extract information that is of value to you. 
+If successful, such an attack may enable you to retrieve sensitive data such as user credentials, gain a deeper understanding of an error condition to fi ne-tune 
+your attack, discover more details about the technologies in use, and map the application’s internal structure and functionality.
+                    </p>
+                    <h2>4. XML External Entity</h2>
+                    <p>
+                        Attackers can exploit vulnerable XML processors if they can upload XML or include hostile content in an XML document, exploiting vulnerable code, dependencies or integrations.
+By default, many older XML processors allow specification of an external entity, a URL that is dereferenced and evaluated during XML processing.
+These flaws can be used to extract data, excute a remote request from the server, scan internal systems, perform a denial-of-serrvice attack, as well as execute other attacks.
+                    </p>
+                    <h2>5. Broken Access Control</h2>
+                    <p>
+                        This involves cases where the application fails to properly protect access to its data and functionality, 
+potentially enabling an attacker to view other users’ sensitive data held on the server or carry out privileged actions (creating, accessing, updating or deleting ).
+Access control weaknesses are common due to lack of automation detection, and lack of effective functional testing by application developers.
+Access control is detectable using manual means, or possibly through automation for the absence of access controls in certain frameworks.
+                    </p>
+                    <h2>6. Security Misconfiguration</h2>
+                    <p>
+                        Attackers will often attempt to exploit unpatched flaws or access default accounts, unused pages, unprotected files and directories, 
+to gain unauthorized access or knowledge of the system.
+Security misconfiguration can happen at any level of an application stack, including the network services, platform, web server, application server,
+database, frameworks, custom code, and preinstalled virtual machines, containers, or storage.
+Automated scanners are useful for dettecting misconfigurations, use of default accounts or configurations, unnecessary services, legacy options, etc.
+                    </p>
+                    <h2>7. Cross-Site Scripting</h2>
+                    <p>
+                        This vulnerability enables an attacker to target other users of the application, potentially gaining access to their data, 
+performing unauthorized actions on their behalf, or carrying out other attacks against them.
+Automated tools can detect and exploit all three forms of XSS, particularly in mature technologies such as PHP, J2EE/JSP, and ASP.NET.
+                    </p>
+                    <h2>8. Insecur De-serialization</h2>
+                    <p>
+                    # Serialization is the process of converting complex data structures, such as objects and their fields, into a "flatter" format that can be sent and received as a sequential stream of bytes.
+                    </p>
+                    <p>
+                    # Deserialization is the process of restoring this byte stream to a fully functional replica of the original object, in the exact state as when it was serialized.
+                    </p>
+                    <p>
+                    So, Insecure deserialization is when user-controllable data is deserialized by a website. This potentially enables an attacker to manipulate serialized objects in order to pass harmful data into the application code.
+                    </p>
+                    <h2>9. Using Components with Known Vulnerabilities</h2>
+                    <p>
+                        While it is easy to find already-written exploits for many known vulnerablities, other vulnerabilities require concentrated effort to
+develop a custom exploit.
+also some known vulnerabilities lead to only minor impacts, some of the largest breaches to date have relied on exploiting known 
+vulnerabilities in components.
+Some scanners help in detection, but determining exploitablity requires additional effort.
+                    </p>
+                    <h2>10. Insufficent Logging&Monitoring</h2>
+                    <p>
+                        Exploitation of Insufficent Logging&Monitoring is the bedrock of nearly every major incident. 
+Attackers rely on the lack of monitoring and timely response to achieve their goals without being detected.
+Most successful attack start with vulnerability probing.
+                    </p>
+                </div>
+            </article>
+
+            <article class="article zt">
+                    <h1 class="ar-h">OWASP-ZAP</h1>
+                <div class="ar-p">
+                    <p>ZED Attack Proxy is a free and open-source web application vulnerability scanning tool from the folks at the venerable OWASP project.</p>
+                    <p> 
+                        Written in Java (therefore platform independent) with an excellent easy-to use GUI, it can be mastered by even a novice in minutes.</p>
+                    <p>
+                        It is terrific for scanning web applications in search of known vulnerabilities, And for both passive and active scanning ZAP is really an amazing tool in that it contains so many functions. 
+                        it lets you explore an application, collecting vulnerabilities along the way. it has a built-in web spider you can use.
+                    </p>
+                    <p>It’s also perfect for creating Cross-Site Request Forgery (CSRF) proofs-of-concept.</p>
+                    <p class="final">~ It is most used tool, mastering it will pay off when you start hacking!</p>
+                </div>
+            </article>
+
+            <article class="article gt">
+                    <h1 class="ar-h">OWASP GAME</h1>
+                <div class="ar-p">
+                    <p>OWASP has created the "OWASP Juice Shop". This is a purposly insecure wabApp that utilizes game theory to entice you to break in.</p>
+                    <p>The Juice Shop is linked to a scoreboard that helps you keep track of  your progress and leads you through the different challenges.</p>
+                    <h3><b>~ There is no link to the scoreboard, it is one of the challenges.</b></h3>
+                    <p>The first item in the tutorial tells you to look at the js code within DevTools by hitting F12, or just start guessing  the url of the scorebord.</p>
+                    <h2>Challenges</h2>
+                    <p>Some of the challenges you will face in the game are :-</p>
+                    <ul class="layer">
+                        <li>~ Broken Authentication</li>
+                        <li>~ Broken Access Control</li>
+                        <li>~ Security Misconfiguration</li>
+                        <li>~ Using Components with known Vulnerabilites</li>
+                        <li>~ Insufficient Logging&Monitoring</li>
+                    </ul>
+                    <p class="final">That is best way to understand security flaws and get experience from attack simulations.</p>
+                </div>
+            </article>
+        </section>
+
+        <footer class="foot">
+            <ul class="flist">
+                <li class="fo-li">Contact</li>
+                <li class="fo-li">ABOUT</li>
+                <li class="fo-li">Social</li>
+                <li class="fo-li">FAQ</li>
+            </ul>
+            <p class="fp">&copy; <a style="color:aqua" href="../index.html">Bug-bounty.com</a>. All rights reserved.</p>
+        </footer>
+
+        <script src="../SCRIPT/owasp.js"></script>
+    </body>
+</html>
